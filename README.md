@@ -110,4 +110,26 @@ The R-type instruction has multiple fields, including:
 
 ![I type](https://github.com/user-attachments/assets/13229840-4f30-4c08-95e7-5b9096e90193)
 
+An I-type instruction in RISC-V is an instruction that uses a 12-bit constant as one of its operands. This constant is also known as an immediate. I-type instructions are also known as Immediate instructions. The 12-bit constant is a signed 2's complement number that is sign extended to form a 32-bit operand. I-type instructions perform the same operations as R-type instructions, but use an immediate value instead of an rs2 index. I-type instructions can be used for loads, stores, branches, or immediate ALU operations. The immediate field in an I-type instruction holds an immediate value that can be interpreted as an unsigned integer or two's complement. 
+The I-type instruction also has multiple fields, including: 
+* Immediate field (20 to 31): The immediate field is a part of an instruction that holds a constant value. The immediate field is used for arithmetic operations.
+* The opcode field : Tells the processor what operation to perform.
+* The destination register operand (rd): The register which stores the result of the operation.
+* 'funct3' field: It is the field after the destination register . This field is 3 – bit length     i.e. from bit 12 to bit 14 and it further tells about the operation, such as whether it is an     addition, subtraction, or a logical operation that is being performed.
+* Source register operand (rs1): The register where one of the input is stored.
+
+-------------------------------------------------------------------------------------------
+## 3. S-Type Instruction:
+
+![s type](https://github.com/user-attachments/assets/e345a066-5997-485a-bfbb-2f036df1fa5d)
+
+S-type instructions are used to store data from registers into memory. The S-type instruction format is used exclusively for memory store instructions. The immediate value in S-type instructions is split up into different bits.
+The multiple fields in a S-Type instruction are:
+* The opcode field : Tells the processor what operation to perform.
+* Immediate fields (One from 7 to 11 and another from 25 to 31): The immediate field in an S-type instruction is used to store the contents of a register to data memory.
+* 'funct3' field: It is the field after the destination register . This field is 3 – bit length     i.e. from bit 12 to bit 14 and it further tells about the operation, such as whether it is an     addition, subtraction, or a logical operation that is being performed.
+* Source register operands (rs1, rs2): The registers where the input is stored.
+
+
+ 
 </details>
