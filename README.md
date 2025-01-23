@@ -152,6 +152,7 @@ A U-type instruction in RISC-V is a type of instruction that specifies the upper
 * The destination register operand (rd) (7 to 11): The register index which stores the result of the operation.
 * The immediate field (12 to 31) : The immediate field in a U-type instruction in RISC-V is a 20-bit value that specifies the upper 20 bits of a register.
 
+------------------------------------------------------------------------
 ## 6. J-Type Instruction:
 
 ![J- Type](https://github.com/user-attachments/assets/0b5b80b9-2c25-48db-93ff-3365f1b44d4e)
@@ -160,6 +161,10 @@ A J-type instruction in RISC-V is a jump instruction that unconditionally transf
 * The opcode field (0 to 6): Tells the processor what operation to perform.
 * The destination register operand (rd) (7 to 11): The register index which stores the result of the operation.
 * The immediate fields (12 to 31) : The immediate field in J type is is a 20-bit value that specifies the upper 20 bits of a register, similar to U type but it is slightly different.
+
+--------------------------------------------------------------------------------
+
+# Identifying Instruction types in Object Dump of application code.
 
 
 </details>
