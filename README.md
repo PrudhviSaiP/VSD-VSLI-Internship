@@ -166,14 +166,46 @@ A J-type instruction in RISC-V is a jump instruction that unconditionally transf
 
 # Identifying Instruction types in Object Dump of application code.
 
-![objdump 1](https://github.com/user-attachments/assets/c3b72dbb-d6b6-4b76-955f-f33e0f4f04b2)
-![objdump 2](https://github.com/user-attachments/assets/8621fad9-71c9-412a-8f2d-13ed8ee9994f)
-
 
 > 15 unique instructions with 32-bit pattern are given below.
 
 
 1. `lui a0,0x2b`
-   LUI (load upper immediate) is a U-type instruction. LUI places the U-immediate value in the top    20 bits of the destination register rd, filling in the lowest 12 bits with zeros.
-   The 32-bit pattern is: ```0000 0000 0000 0010 1011 0101 0011 0111```.
+   * LUI (load upper immediate) is a U-type instruction.
+   * LUI places the U-immediate value in the top 20 bits of the destination register rd, filling in the lowest 12 bits with zeros.
+   * This instruction will be executed and the immediate value 0x2b will be written in the MSB of the rd a0.
+
+   * The 32-bit pattern is: ```0000 0000 0000 0010 1011 0101 0011 0111```.
+
+2. `addi sp,sp,-80`
+   * addi (Add immediate) is a I-type instruction.
+   * LUI places the U-immediate value in the top 20 bits of the destination register rd, filling in the lowest 12 bits with zeros.
+
+   * The 32-bit pattern is: ```0000 0000 0000 0010 1011 0101 0011 0111```.
+
+3. `sd ra,72(sp)`
+   * LUI (load upper immediate) is a U-type instruction.
+   * LUI places the U-immediate value in the top 20 bits of the destination register rd, filling in the lowest 12 bits with zeros.
+
+   * The 32-bit pattern is: ```0000 0000 0000 0010 1011 0101 0011 0111```.
+
+4. `lw a5,12(sp)`
+   * LW stands for Load Word. Word is equal to 32 bits or 4 bytes. Since there is an immediate value given in the instruction which helps to calculate the address of memory from where we have to fetch the data, hence this instruction belongs to I-type.
+   * a5 is the destination register that will hold the value fetched from the memory location.
+
+   * The 32-bit pattern is: ```0000 0000 1100 0001 0010 0111 1000 0011```.
+
+5. `li s5,1`
+   * LUI (load upper immediate) is a U-type instruction.
+   * LUI places the U-immediate value in the top 20 bits of the destination register rd, filling in the lowest 12 bits with zeros.
+
+   * The 32-bit pattern is: ```0000 0000 0000 0010 1011 0101 0011 0111```.
+
+6. `subw a5, a5, s2`
+   * LUI (load upper immediate) is a U-type instruction.
+   * LUI places the U-immediate value in the top 20 bits of the destination register rd, filling in the lowest 12 bits with zeros.
+
+   * The 32-bit pattern is: ```0000 0000 0000 0010 1011 0101 0011 0111```.
+
+
 </details>
