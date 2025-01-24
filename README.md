@@ -1,4 +1,4 @@
-# VSD-VSLI-Internship   
+![objdump 2](https://github.com/user-attachments/assets/8a5e7d79-87b3-4a9e-b80d-d7c41656eac0)# VSD-VSLI-Internship   
 <details>
 <summary><b>Task 1: </b> Installing all essential tools and compiling a 'C' code using gcc compiler.</summary>
 <br>
@@ -166,5 +166,14 @@ A J-type instruction in RISC-V is a jump instruction that unconditionally transf
 
 # Identifying Instruction types in Object Dump of application code.
 
+![objdump 1](https://github.com/user-attachments/assets/c3b72dbb-d6b6-4b76-955f-f33e0f4f04b2)
+![objdump 2](https://github.com/user-attachments/assets/8621fad9-71c9-412a-8f2d-13ed8ee9994f)
 
+
+> 15 unique instructions with 32-bit pattern are given below.
+
+
+1. `lui a0,0x2b`
+   LUI (load upper immediate) is a U-type instruction. LUI places the U-immediate value in the top    20 bits of the destination register rd, filling in the lowest 12 bits with zeros.
+   The 32-bit pattern is: ```0000 0000 0000 0010 1011 0101 0011 0111```.
 </details>
