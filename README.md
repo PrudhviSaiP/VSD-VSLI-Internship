@@ -179,15 +179,15 @@ A J-type instruction in RISC-V is a jump instruction that unconditionally transf
 
 2. `addi sp,sp,-80`
    * addi (Add immediate) is a I-type instruction.
-   * LUI places the U-immediate value in the top 20 bits of the destination register rd, filling in the lowest 12 bits with zeros.
+   * It is done on the stack pointer registor (sp).
 
-   * The 32-bit pattern is: ```0000 0000 0000 0010 1011 0101 0011 0111```.
+   * The 32-bit pattern is: ```1111 1011 0000 0001 0000 0001 0001 0011```.
 
-3. `sd ra,72(sp)`
-   * LUI (load upper immediate) is a U-type instruction.
-   * LUI places the U-immediate value in the top 20 bits of the destination register rd, filling in the lowest 12 bits with zeros.
+3. `SUB r7, r1, r2`
+   * All the arithmetic and logical operations are performed using R-type instruction format, hence this instruction belongs to R-type instruction set.
+   * r7 is the destination register that will hold the difference of values stored in the register r1 and r2.
 
-   * The 32-bit pattern is: ```0000 0000 0000 0010 1011 0101 0011 0111```.
+   * The 32-bit pattern is: ```0100 0000 0010 0000 1000 0011 1011 0011```.
 
 4. `lw a5,12(sp)`
    * LW stands for Load Word. Word is equal to 32 bits or 4 bytes. Since there is an immediate value given in the instruction which helps to calculate the address of memory from where we have to fetch the data, hence this instruction belongs to I-type.
@@ -195,17 +195,17 @@ A J-type instruction in RISC-V is a jump instruction that unconditionally transf
 
    * The 32-bit pattern is: ```0000 0000 1100 0001 0010 0111 1000 0011```.
 
-5. `li s5,1`
-   * LUI (load upper immediate) is a U-type instruction.
-   * LUI places the U-immediate value in the top 20 bits of the destination register rd, filling in the lowest 12 bits with zeros.
+5. `SLT r11, r2, r4`
+   * Since the logical operation is performed on registers, hence this instruction belongs to R-type instruction set.
+   * r1 is the destination register that sets to 1, if r2 is less than r4, else 0 if r2 is greater than r4.
 
-   * The 32-bit pattern is: ```0000 0000 0000 0010 1011 0101 0011 0111```.
+   * The 32-bit pattern is: ```0000 0000 0100 0001 0010 0101 1011 0011```.
 
-6. `subw a5, a5, s2`
-   * LUI (load upper immediate) is a U-type instruction.
-   * LUI places the U-immediate value in the top 20 bits of the destination register rd, filling in the lowest 12 bits with zeros.
+6. `jal ra, 10408`
+   * It is a J-Type instruction.
+   * The jal instruction jumps to the target address 10408 and stores the return address in register ra.
 
-   * The 32-bit pattern is: ```0000 0000 0000 0010 1011 0101 0011 0111```.
+   * The 32-bit pattern is: ```0011 0100 0000 0000 0000 0000 1110 1111```.
 
 
 </details>
