@@ -1,4 +1,4 @@
-![objdump 2](https://github.com/user-attachments/assets/8a5e7d79-87b3-4a9e-b80d-d7c41656eac0)# VSD-VSLI-Internship   
+# VSD-VSLI-Internship   
 <details>
 <summary><b>Task 1: </b> Installing all essential tools and compiling a 'C' code using gcc compiler.</summary>
 <br>
