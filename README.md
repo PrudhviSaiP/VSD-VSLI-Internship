@@ -730,6 +730,7 @@ gtkwave iiitb_rv32i.vcd
 ***
 ## CIRCUIT DIAGRAM
 
+![Screenshot 2025-02-16 152539](https://github.com/user-attachments/assets/f5190f8d-064e-4900-8465-8fd48a363a5a)
 
 
 ## Table for Pin connection:
@@ -817,11 +818,16 @@ void setPWMDuty(int pulseWidth) {
 }
 
 ```
+</details>
 
+-----------------------------------------------------------------------------------------------------------------
 
+<details>
+<summary><b>Task 6: </b>Smart Light Sensor, Working Video.</summary> 
+<br>
 
-
+https://drive.google.com/file/d/1cABiJjAcnGgZaSo86KzOUS1DdcsJkmaQ/view?usp=drive_link
 
 </details>
 
-
+-----------------------------------------------------------------------------------
