@@ -1,4 +1,29 @@
 # VSD-VSLI-Internship   
+
+### INTRODUCTION
+The VSDSquadron Mini Internship is a dynamic, short-term program designed to offer hands-on experience in VLSI design, semiconductor technology, and related fields. It serves as a bridge between academic learning and industry-ready skills.
+During my internship at Samsung-VSD, I had the opportunity to explore and work with the CH32V003F4U6, a 32-bit RISC-V microcontroller. The VSD Squadron Mini is widely recognized for its contributions to open-source EDA tools, RISC-V development, and embedded systems.
+I worked with the VSDSquadron Mini RISC-V Development Kit, a robust platform built on the RISC-V architecture. This project provided an opportunity to delve into embedded systems and explore how RISC-V integrates into various development workflows. I gained practical, hands-on experience with its core features while applying cutting-edge techniques in embedded system design.
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d5250c68-c757-4960-9ed7-1de4c6cb7eb7" 
+       alt="VSDSquadron Board Diagram" width="600">
+</p>
+
+
+
+***
+### Basic Details  
+**Name:** Purigella Prudhvi Sai Bharadwaj    
+**University:** Sri Sathya Sai Institute of Higher Learning      
+**Email ID:** prudhvisai2004@gmail.com     
+**GitHub Profile:** PrudhviSaiP   
+**LinkedIN Profile:** P.Prudhvi Sai Bharadwaj
+
+
+***
+
 <details>
 <summary><b>Task 1: </b> Installing all essential tools and compiling a 'C' code using gcc compiler.</summary>
 <br>
